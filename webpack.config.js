@@ -12,14 +12,8 @@ const config = [{
   },
   output: {
     path: path.resolve(__dirname, 'dist'), //こっちに dist/sctiptにするとhtmlもscript配下に作成される
-    // publicPath: 'http://localhost:8080/',
     filename: 'script/[name].js',
   },
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, 'dist'),
-  //   inline: true,
-  //   hot: true
-  // },
   module: {
     rules: [{
       test: /\.js$/,
@@ -34,9 +28,7 @@ const config = [{
       }]
     },{
       test: /\.ejs$/,
-      use: [{
-        loader: 'ejs-render-loader'
-      }]
+      use: ['ejs-render-loader']
     },{
       test: /\.(png|jpg|gif)$/,
       use: [{
@@ -69,19 +61,13 @@ const config = [{
   },
   output: {
     path: path.resolve(__dirname, 'dist/style'),
-    // publicPath: 'http://localhost:8080/',
     filename: '[name].css',
   },
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, 'dist'),
-  //   inline: true,
-  //   hot: true
-  // },
   module: {
     rules: [{
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
-        fallbackLoader: 'style-loader',
+        fallback: 'style-loader',
         loader: ['css-loader?minimize', 'sass-loader']
       })
     }]

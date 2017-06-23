@@ -14,6 +14,8 @@
   - ejs
   - ejs-render-loader
 - その他
+  - glob
+  - lodash
   - file-loader
   - url-loader
   - html-webpack-plugin (output用のhtml生成)

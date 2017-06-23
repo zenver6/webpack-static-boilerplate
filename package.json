@@ -1,7 +1,7 @@
 {
   "name": "webpack-static-boilerplate",
   "version": "1.0.0",
-  "description": "## 使いたい機能 - sass   - css-loader   - style-loader   - sass-loader   - node-sass - ES2015（babel）   - babel-core   - babel-loader   - babel-preset-es2015 - ejs   - ejs   - ejs-render-loader - その他   - file-loader   - url-loader",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch -d & browser-sync start --config bs-config.js",

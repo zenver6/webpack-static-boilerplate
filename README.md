@@ -18,6 +18,7 @@
   - lodash
   - file-loader
   - url-loader
+  - image-webpack-loader (画像のオプティマイズ)
   - html-webpack-plugin (output用のhtml生成)
   - extract-text-webpack-plugin (cssを別ファイルで生成)
   - ~~webpack-dev-server~~ (browser-syncに乗り換え)
